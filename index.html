@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucket List</title>
+    <link href="src/css/main.scss" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-900 flex flex-col items-center py-10">
+    <h1 class="text-4xl font-bold mb-6">My Bucket List</h1>
+
+    <!-- Form to add new items -->
+    <form
+      id="bucket-form"
+      class="w-full max-w-md flex flex-col space-y-4 mb-8 p-5"
+    >
+      <input
+        type="text"
+        id="bucket-input"
+        placeholder="Add a new item..."
+        required
+        class="p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <input
+        type="url"
+        id="bucket-image-url"
+        placeholder="Enter image URL (optional)"
+        class="p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <input
+        type="date"
+        id="bucket-date"
+        placeholder="Date Created"
+        required
+        class="p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button
+        type="submit"
+        class="px-4 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600"
+      >
+        Add
+      </button>
+    </form>
+
+    <!-- List of bucket list items -->
+    <ul id="bucket-list" class="w-full max-w-lg space-y-4 p-5">
+      <!-- List items will appear here -->
+    </ul>
+
+    <!-- Link to the JavaScript file -->
+    <script src="/src/js/index.js"></script>
+  </body>
+</html>
